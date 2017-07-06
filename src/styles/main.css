@@ -122,9 +122,29 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style-type: none;
 }
 .navigation-element._selected {
   background-color: #eee;
+}
+.navigation-element-icon {
+  width: 40px;
+  height: 40px;
+  color: black;
+  cursor: pointer;
+}
+.navigation-element-icon-svg._selected {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+}
+.navigation-element-icon-svg {
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
 }
 .content {
   width: 100%;
@@ -164,6 +184,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.content-block-birthday-image {
+  height: 100%;
+  width: 100%;
+}
 .content-block-header {
   padding: 8%;
 }
@@ -195,6 +219,13 @@ body {
 }
 .content-block-text {
   padding: 8%;
+}
+.content-block-text-paragraph-link {
+  text-decoration: none;
+  color: #03A9F4;
+}
+.content-block-text-paragraph-link:hover {
+  color: #222;
 }
 .content-block-hashtags {
   width: 92%;
@@ -468,10 +499,16 @@ body {
   margin: 3%;
 }
 @media (max-width: 1000px) {
-  .navigation {
+  .navigation,
+  .footer-first-block-left,
+  .footer-second-block-left,
+  .footer-third-block-left {
     display: none;
   }
-  .content {
+  .content,
+  .footer-first-block-center,
+  .footer-second-block-center,
+  .footer-third-block-center {
     -webkit-box-flex: 4.5;
         -ms-flex: 4.5;
             flex: 4.5;

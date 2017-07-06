@@ -79,6 +79,8 @@ html, body {
 }
 
 
+
+
 .navigation {
   padding-top: 2%;
   flex: 0.5;
@@ -102,12 +104,28 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style-type: none;
 }
 .navigation-element._selected {
   background-color: #eee;
 }
-
-
+.navigation-element-icon {
+  width: 40px;
+  height: 40px;
+  color: black;
+  cursor: pointer;
+}
+.navigation-element-icon-svg._selected {
+  flex: 3;
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+}
+.navigation-element-icon-svg {
+   fill: none;
+   stroke: white;
+   stroke-width: 2;
+ }
 
 
 .content {
@@ -131,6 +149,10 @@ html, body {
   min-width: 350px;
   display: flex;
   flex-direction: column;
+}
+.content-block-birthday-image {
+  height: 100%;
+  width: 100%;
 }
 .content-block-header {
   padding: 8%;
@@ -164,6 +186,13 @@ html, body {
 .content-block-text {
    padding: 8%;
  }
+.content-block-text-paragraph-link {
+  text-decoration: none;
+  color: #03A9F4;
+}
+.content-block-text-paragraph-link:hover {
+  color: #222;
+}
 .content-block-hashtags {
   width: 92%;
   display: inline-flex;
@@ -188,6 +217,7 @@ html, body {
 .content-block-hashtags-single:hover {
   color: #03A9F4;
 }
+
 
 
 
@@ -353,10 +383,12 @@ html, body {
 }
 
 @media (max-width:1000px) {
-  .navigation {
+  .navigation, .footer-first-block-left,
+  .footer-second-block-left, .footer-third-block-left {
     display:none;
   }
-  .content {
+  .content, .footer-first-block-center,
+  .footer-second-block-center, .footer-third-block-center {
     flex: 4.5;
   }
   .aside {
