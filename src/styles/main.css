@@ -531,9 +531,9 @@ body {
   color: #333;
 }
 .footer-third-block-center-bottom {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
   background: rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,9 +556,15 @@ body {
 }
 .footer-third-block-center-bottom-info-block-link {
   text-decoration: none;
-  color: black;
+  color: #333;
   padding-left: 10%;
   padding-top: 1%;
+  font-weight: bold;
+  font-size: larger;
+}
+.footer-third-block-center-bottom-info-block-link:hover {
+  color: black;
+  font-weight: bolder;
 }
 .footer-third-block-right {
   -webkit-box-flex: 1.5;
