@@ -1,4 +1,7 @@
 //с button убрать margin и обернуть в блок
+@color__black: black;
+@color__light-blue: #ccc;
+
 
 html {
   font-family: "Whitney SSm A", "Whitney SSm B",
@@ -31,13 +34,13 @@ html, body {
 .header-logo__icon {
   width: 35px;
   height: 35px;
-  fill: #ccc;
+  fill: @color__light-blue;
   margin-left: 4%;
 }
 .header-logo__text {
   height: 30px;
   text-decoration: none;
-  color: black;
+  color: @color__black;
   margin-left: 4%;
 }
 
@@ -54,14 +57,14 @@ html, body {
 .header-search__input, .footer-first-block__search-input {
   width: 70%;
   height: 60%;
-  border: 1px solid #ccc;
+  border: 1px solid @color__light-blue;
   padding: 5px;
   border-radius: 2px;
 }
 .header-search__button {
   height: 60%;
   width: 58px;
-  background: black;
+  background: @color__black;
   border: none;
   cursor: pointer;
 }
@@ -114,13 +117,13 @@ html, body {
 .main-navigation-list__element-icon {
   width: 40px;
   height: 40px;
-  color: black;
+  color: @color__black;
   cursor: pointer;
 }
 .main-navigation-list__icon-svg._selected {
   flex: 3;
   fill: none;
-  stroke: black;
+  stroke: @color__black;
   stroke-width: 2;
 }
 .main-navigation-list__icon-svg {
@@ -238,7 +241,7 @@ html, body {
 }
 .content-more__button:hover, .footer-first-block__search-button:hover,
 .footer-third-block-right__button:hover {
-  background: black;
+  background: @color__black;
 }
 
 
@@ -332,7 +335,7 @@ html, body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: black;
+  background-color: @color__black;
 }
 .footer-second-block-center__logo {
   width: 100%;
@@ -373,7 +376,7 @@ html, body {
 }
 .footer-third-block-left {
   flex: 0.5;
-  background-color: black;
+  background-color: @color__black;
   display: flex;
   flex-direction: column;
 }
@@ -394,7 +397,7 @@ html, body {
   width: 70%;
   height: 70%;
   fill: #FF9800;
-  background: black;
+  background: @color__black;
   margin-left: 4%;
 }
 .footer-third-block-center {
@@ -445,7 +448,7 @@ html, body {
   font-size: larger;
 }
 .footer-third-block-center__bottom-info-link:hover {
-  color: black;
+  color: @color__black;
   font-weight: bolder;
 }
 .footer-third-block-right {
@@ -469,7 +472,7 @@ html, body {
 }
 .footer-third-block-right-ul__link-single {
   text-decoration: none;
-  color: black;
+  color: @color__black;
 }
 .footer-third-block-right__button {
   margin: 1% 3% 3% 3%;
