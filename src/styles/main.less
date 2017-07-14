@@ -1,20 +1,27 @@
-@import "common/common";
+/* Common */
 @import "common/colors";
+@import "common/common";
 @import "common/fonts";
-@import "blocks/header-page";
-@import "blocks/header-search";
-@import "blocks/content-page";
-@import "blocks/content-page-nav";
+
+/* Blocks */
+@import "blocks/content/content-block";
+@import "blocks/content/content-more";
+@import "blocks/content/content-page";
+@import "blocks/content/content-page-nav";
+
+@import "blocks/footer/footer-first-block";
+@import "blocks/footer/footer-page";
+@import "blocks/footer/footer-search";
+@import "blocks/footer/footer-second-block";
+@import "blocks/footer/footer-third-block";
+
+@import "blocks/header/header-logo";
+@import "blocks/header/header-page";
+@import "blocks/header/header-search";
+
 @import "blocks/nav-link";
-@import "blocks/content-block";
-@import "blocks/content-more";
-@import "blocks/footer-page";
-@import "blocks/footer-first-block";
-@import "blocks/footer-search";
-@import "blocks/footer-second-block";
-@import "blocks/footer-third-block";
 
-
+/* Media */
 @media (max-width:980px) {
   .content-page-nav, .footer-first-block__left,
   .footer-second-block__left, .footer-third-block__left {
