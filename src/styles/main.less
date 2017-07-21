@@ -7,13 +7,12 @@
 @import "blocks/content/content-block";
 @import "blocks/content/content-more";
 @import "blocks/content/content-page";
-@import "blocks/content/content-page-nav";
 
-@import "blocks/footer/footer-first-block";
+@import "blocks/footer/footer-search-block";
 @import "blocks/footer/footer-page";
-@import "blocks/footer/footer-search";
-@import "blocks/footer/footer-second-block";
-@import "blocks/footer/footer-third-block";
+@import "blocks/footer/footer-input";
+@import "blocks/footer/footer-host-block";
+@import "blocks/footer/footer-menu-block";
 
 @import "blocks/header/header-logo";
 @import "blocks/header/header-page";
@@ -22,16 +21,18 @@
 @import "blocks/nav-link";
 
 /* Media */
-@media (max-width:980px) {
-  .content-page-nav, .footer-first-block__left,
-  .footer-second-block__left, .footer-third-block__left {
-    display:none;
-  }
-  .content-page__content, .footer-first-block__center,
-  .footer-second-block__center, .footer-third-block__center {
-    flex: 4.5;
-  }
-  .content-page__aside {
-    flex: 1.5;
-  }
+@media (max-width: 980px) {
+    .content-page-nav, .footer-first-block__left,
+    .footer-second-block__left, .footer-third-block__left {
+        display: none;
+    }
+
+    .content-page__content, .footer-first-block__center,
+    .footer-second-block__center, .footer-third-block__center {
+        flex: 4.5;
+    }
+
+    .content-page__aside {
+        flex: 1.5;
+    }
 }
