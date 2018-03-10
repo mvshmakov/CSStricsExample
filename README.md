@@ -1,10 +1,10 @@
-## This project represents the example of CSS-Trics Web Site.
+### This project represents the example of CSS-Tricks website.
 
 ## To run it you need to follow next steps:
 #### 1. Install Node.js.
 #### 2. Run `npm i` in console to install all dependences.
 #### 3. Run `gulp` in console to start gulp process.
 
-## Site markup:
+## Website markup:
 
 ![alt text](css-tricks.png)
